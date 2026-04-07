@@ -148,8 +148,7 @@
     /* Getting there card */
     .getting-card{background:var(--peach);color:white;border-radius:6px;padding:36px;margin-top:36px;max-width:760px;margin-left:auto;margin-right:auto}
     .getting-card h3{margin:0 0 6px 0;font-family: 'Josefin Sans', sans-serif;font-size: 1.8rem; text-transform: uppercase; letter-spacing: 1px;}
-    .getting-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:20px;align-items:stretch}
-    .subcard{display:flex;flex-direction:column;}
+    .getting-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:20px}
     .subcard{background:rgba(255,255,255,0.08);padding:14px;border-radius:6px; border: 1px solid rgba(255,255,255,0.15); text-align: center;}
     .subcard h4{margin:0 0 8px 0;font-family: 'Josefin Sans', sans-serif;font-size: 1.2rem; text-transform: uppercase; letter-spacing: 1px;}
     .subcard p{margin:0;color:rgba(255,255,255,0.95);line-height: 1.6;}
@@ -478,8 +477,8 @@
         </div>
       </div>
 
-      <div class="venue-line" style="margin-bottom: 6px;">Castello di San Nicola L'Arena – Sicily, Italy</div>
-      <div class="venue-line" style="font-family: 'Josefin Sans', sans-serif; letter-spacing: 3px; font-size: 15px; color: rgba(255,255,255,0.85);">⏱ CEREMONY AT 16:30</div>
+      <div class="venue-line">Castello di San Nicola L'Arena – Sicily, Italy</div>
+	  <div class="venue-line" style="font-family: 'Josefin Sans', sans-serif; letter-spacing: 3px; font-size: 15px; color: rgba(255,255,255,0.85);">⏱ CEREMONY AT 16:30</div>
     </div>
   </section>
 
@@ -521,20 +520,6 @@
             <img src="img/auto.png" alt="Car" style="height: 40px; margin-bottom: 8px;">
             <h4>BY CAR</h4>
             <p>Enjoy a scenic drive along the northern coast of Sicily to reach San Nicola l'Arena, a charming seaside village near Palermo. The route offers beautiful coastal views, rolling hills, and glimpses of authentic Sicilian life along the way. If you need to rent a car, we recommend booking with Sicily by Car for a smooth and reliable experience.</p>
-          </div>
-
-          <div class="subcard">
-            <div style="font-size: 32px; margin-bottom: 8px;">🚖</div>
-            <h4>PRIVATE TRANSFER</h4>
-            <p>We've partnered with <strong>Classic Car Gambino</strong>, a trusted local service offering discounted transfers — airport to the venue, city centre, and more. They also speak English and are very easy to reach.<br><br>
-            Contact them on WhatsApp: <a href="https://wa.me/393770214956" target="_blank" rel="noopener" style="color: white; font-weight: 700; text-decoration: underline;">+39 377 021 4956</a><br>
-            <span style="font-size: 0.92em; color: rgba(255,255,255,0.85);">Just mention it's for the wedding of <em>Agostino &amp; Maria</em> to get the special rate!</span></p>
-          </div>
-
-          <div class="subcard">
-            <div style="font-size: 32px; margin-bottom: 8px;">🇵🇹</div>
-            <h4>FOR GUESTS COMING FROM PORTUGAL</h4>
-            <p>We'll be organising complimentary transport to and from the venue for all guests traveling from Portugal. Specific times and pick-up/drop-off points will be shared closer to the date — stay tuned! 🎉</p>
           </div>
           
         </div>
@@ -582,7 +567,7 @@
       <div class="contact">
         <h3 style="font-family: 'Josefin Sans', sans-serif; text-transform:uppercase; letter-spacing: 1px;">YOU MUST HAVE SOME QUESTIONS?</h3>
         <p>We know weddings bring lots of questions! Feel free to reach out, we're happy to help.</p>
-        <p>Please send us an email at <b><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="e08d8192898181878f9394898e8fd3d0d0d5a0878d81898cce838f8d">[email&#160;protected]</a><b></p>
+        <p>Please send us an email at <b>mariaagostino3005@gmail.com<b></p>
       </div>
 
       <div class="rsvp-wrap" style="margin-top:28px">
@@ -646,7 +631,7 @@ all dance, laugh, and celebrate together!
     </div>
   </div>
 
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  <script>
     
     const target = new Date('2026-05-30T17:00:00+02:00').getTime();
     const D = document.getElementById('cd-days');
@@ -680,4 +665,17 @@ all dance, laugh, and celebrate together!
 
     function closeIbanOverlay(event) {
       if (!event || event.target.id === 'ibanOverlay' || event.target.classList.contains('iban-close')) {
-        document.getElementById('ibanOverlay').classList.remove('active
+        document.getElementById('ibanOverlay').classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    }
+
+    
+    document.addEventListener('keydown', function(event) {
+      if (event.key === 'Escape') {
+        closeIbanOverlay();
+      }
+    });
+   </script>
+  </body>
+  </html>
